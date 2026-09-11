@@ -1,0 +1,109 @@
+/* =========================================
+   Estilo Base e Layout
+   ========================================= */
+body {
+    background-color: #6498ff;
+    color: #1e293b !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Card centralizado para o conteúdo principal */
+main[role="main"] {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   Títulos e Tipografia
+   ========================================= */
+h1, h2, h3, h4, h5, h6 {
+    color: #0f172a !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   Tabelas (Index de Cliente e Produto)
+   ========================================= */
+.table, table {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+    /* Cabeçalho claro com texto escuro garantido */
+    .table th, table th {
+        background-color: #f1f5f9 !important;
+        color: #0f172a !important;
+        font-weight: 600;
+        padding: 14px;
+        border-bottom: 2px solid #cbd5e1;
+    }
+
+    .table td, table td {
+        padding: 12px 14px;
+        color: #334155 !important;
+        vertical-align: middle;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    .table tbody tr:hover, table tbody tr:hover {
+        background-color: #f8fafc;
+    }
+
+/* =========================================
+   Formulários (Create e Edit)
+   ========================================= */
+form {
+    max-width: 600px;
+}
+
+label, .col-form-label {
+    color: #334155 !important;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-control, input[type="text"], input[type="number"], input[type="email"], select, textarea {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 6px;
+    padding: 9px 12px;
+}
+
+    .form-control:focus, input:focus, select:focus, textarea:focus {
+        border-color: #2563eb !important;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+        outline: none;
+    }
+
+/* =========================================
+   Links e Botões Secundários
+   ========================================= */
+/* Links dentro do conteúdo (exclui os botões e a barra superior) */
+main a:not(.btn) {
+    color: #2563eb !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    main a:not(.btn):hover {
+        color: #1d4ed8 !important;
+        text-decoration: underline;
+    }
+
+/* Validações de erro */
+.text-danger {
+    color: #dc2626 !important;
+    font-size: 0.875rem;
+}
